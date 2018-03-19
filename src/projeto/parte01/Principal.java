@@ -28,6 +28,7 @@ public class Principal {
         //Declarando as variáveis
         int op =0;
         while(op > 7) {
+            System.out.println("Testandoo!!");
             
         }
     }
