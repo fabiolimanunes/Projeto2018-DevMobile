@@ -112,14 +112,16 @@ public class Principal {
 
             } //Soma números primos
             else if (op == 5) {
+                //declarando as variáveis
                 int n;
-                int ini = 1;
+                int i, somaprimo = 0;
                 boolean primo = false;
+                //interação com o usuário
                 System.out.println("Digite um número: ");
                 Scanner sc = new Scanner(System.in);
                 n = sc.nextInt();
-                int i, somaprimo = 0;
-                //int numprimo;
+                
+                // lógica para definir se o número é primo ou não
                 for (i = 2; i <= n; i++) {
                     if (i == 2) {
                         somaprimo = somaprimo + i;
@@ -169,6 +171,7 @@ public class Principal {
                     potencia = 0;
                             
                     decimal = 0;
+                    //for para percorrer a potência em cada posição fazendo o decremento
                     for (int i = num2.length() - 1; i >= 0; i--) {
                         decimal += Math.pow(2, potencia)
                                 * Character.getNumericValue(num2.charAt(i));
